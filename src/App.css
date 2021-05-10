@@ -46,6 +46,8 @@
   --primary-dark: rgba(255,255,255, 0);
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
+  --primary-light-grey: #D3D3D3;
+  --primary-black: #000000;
 }
 body {
   font-family: "Roboto Condensed", sans-serif !important;
@@ -165,6 +167,7 @@ transition: .2s ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .profile-img {
@@ -181,4 +184,70 @@ transition: .2s ease-in-out;
   .profile-img{
      width: 10rem;
     }
+}
+
+
+/**********************Portfolio*************/
+.portfolio-wrapper{
+  background: var(--primary-light-grey);
+  padding: 3rem 0;
+  
+}
+
+.portfolio-image{
+ width:25rem;
+  padding: 0 0.5rem;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  
+}
+
+.portfolio-image-box{
+  position: relative;
+  margin: 1rem;
+  
+}
+.overflow{
+  position:absolute;
+  opacity: 0;
+  background: var(--primary-black);
+  width:25rem;
+  height: 14rem;
+  top:0;
+  border: 1px solid var(--primary-red);
+  cursor: pointer;
+}
+
+.portfolio-image-box:hover .overflow {
+  opacity: 60%;
+  transition: 0.3s ease-in-out;
+}
+
+.portfolio-icon{
+  position: absolute;
+  opacity: 0;
+  margin-left: -12.5rem;
+  margin-top: 7rem;
+  color: var(--primary-orange);
+  font-size: 1.5rem;
+}
+
+.portfolio-image-box:hover .portfolio-icon {
+  opacity:70%;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.portfolio-image-popupbox {
+  width: 45rem;
+  padding: 0 0.5rem;
+}
+
+.hyper-link {
+  cursor: pointer;
+  
+}
+.hyper-link:hover {
+  cursor: pointer;
+  color: var(--primary-red);
 }
