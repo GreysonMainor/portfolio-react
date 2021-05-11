@@ -368,7 +368,27 @@ input.form-control{
         padding: 0 1rem;
     }
 
-    .conatacts p{
+    .contacts p{
         padding: 0 0.4rem;
     }
+}
+
+/**************footer************/
+
+.footer{
+    background: var(--primary-black);
+    color: var(--primary-white);
+    padding: 3rem;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--primary-light-grey);
+
+}
+
+.footer a:hover{
+    text-decoration: none;
+    color: var(--primary-hover-red);
+    cursor:pointer;
 }

@@ -36,7 +36,7 @@ const onSubmit = (data, r) => {
     
 
     return (
-        <div className="contacts">
+        <div id="Contact" className="contacts">
             <div className="text-center">
             <h1>contact me</h1>
             <p>Please fill out the form below and I will contact you as soon as possible.</p>
