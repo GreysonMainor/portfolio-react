@@ -46,6 +46,10 @@
     --primary-hover-red: #f33501;
     --primary-light-grey: #D3D3D3;
     --primary-black: #000000;
+    --primary-dark-gray: #a9a9a9;
+    --primary-light-heart-blue: #bee9e4;
+    --primary-dark-blue: #173f5f;
+    --primary-green:green;
 }
 
 body {
@@ -280,7 +284,7 @@ nav ul li {
 /****************************Contact*********************/
 
 .contacts {
-    background: var(--primary-dark);
+    background: var(--primary-dark-blue);
     padding: 3rem 0;
 }
 
@@ -292,5 +296,79 @@ nav ul li {
 
 .contacts p {
    font-size: 1.2rem;
+   color: var(--primary-black);
 
+}
+
+.contacts input, .contacts textarea {
+    width:100%;
+    box-sizing: border-box;
+    background: none;
+    resize: none;
+    border:0;
+    border-bottom: 0.125rem solid var(--primary-dark-gray);
+    border-radius: 0;
+    color: var(--primary-black);
+    outline: 0 !important;
+    box-shadow: none !important;
+    top:0;
+    margin-bottom: 1rem;
+    padding-left: 0 !important;
+}
+
+.contacts .container {
+    padding: 4rem 0;
+}
+
+.contacts input:focus, .contacts textarea:focus {
+    background: transparent;
+    color: var(--primary-black);
+    border-bottom:0.125rem solid var(--primary-dark-gray);
+}
+
+.contacts textarea {
+    height: 10.5rem;
+    margin: 2rem 0;
+}
+
+.contact-btn {
+    margin: 1rem 0 0 0;
+    width: 100%;
+    background: none;
+}
+
+.line {
+    position: relative;
+    width:0;
+    height: .125rem;
+    background: var(--primary-orange);
+    display: inline-block;
+}
+
+input:focus+line, textarea:focus+line {
+    width: 100%;
+    transition: width 0.5s ease-in-out;
+}
+
+input.form-control{
+    margin: -0.3rem 0;
+}
+
+.success-message {
+    font-weight: 900;
+    color: var(--primary-green)
+}
+
+@media(max-width: 768px) {
+.contacts {
+    overflow-x:hidden;
+}
+
+    .contacts .container {
+        padding: 0 1rem;
+    }
+
+    .conatacts p{
+        padding: 0 0.4rem;
+    }
 }
