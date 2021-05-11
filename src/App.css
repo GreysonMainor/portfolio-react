@@ -275,3 +275,22 @@ nav ul li {
         width: 30%;
     }
 }
+
+
+/****************************Contact*********************/
+
+.contacts {
+    background: var(--primary-dark);
+    padding: 3rem 0;
+}
+
+.contacts h1 {
+    color: var(--primary-black);
+    padding: 1.3rem 0;
+    text-transform: uppercase;
+}
+
+.contacts p {
+   font-size: 1.2rem;
+
+}

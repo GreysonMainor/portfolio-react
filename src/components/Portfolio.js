@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons"
 import { PopupboxManager, PopupboxContainer } from "react-popupbox"
 import "react-popupbox/dist/react-popupbox.css";
+import "bootstrap/dist/css/bootstrap.min.css"
 
 const Portfolio = () => {
 
@@ -99,7 +100,7 @@ return (
     < div className="portfolio-wrapper">
         <div className="container">
             <h1 className="text-uppercase text-center py-5">Portfolio</h1>
-            <div className="image-box-wrapper">
+            <div className="image-box-wrapper row justify-content-center">
                 <div className="portfolio-image-box" onClick={openPopupboxHound}>
                     <img className="portfolio-image" src={HoundandSeek} alt="Hound and seek project" />
                     <div className="overflow"></div>
