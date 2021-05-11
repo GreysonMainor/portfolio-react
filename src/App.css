@@ -23,6 +23,7 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
+  
 }
 
 .App-link {
@@ -99,7 +100,7 @@ nav ul li {
     background: url(Portfolio-background.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    height: 90vh;
+    height: 100vh;
 }
 
 .main-info {
